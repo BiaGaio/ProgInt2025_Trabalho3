@@ -16,6 +16,7 @@
                 <li><a href="#cardapio">Cardápio</a></li>
                 <li><a href="#sobre">Sobre Nós</a></li>
                 <li><a href="#contato">Contato</a></li>
+                <li><a href="#sugestao">Sugestões</a></li>
             </ul>
         </nav>
     </header>
@@ -86,6 +87,77 @@
                 Segunda a Sábado: 11h00 às 23h00<br>
                 Domingo: 16h00 às 23h00</p>
             </div>
+        </section>
+        
+        <section id="sugestao" class="suggestion-section">
+            <h2>Sugira uma Pizza</h2>
+            <p>Queremos ouvir suas ideias para novas pizzas!</p>
+            
+            <form class="suggestion-form">
+                <div class="form-group">
+                    <label for="pizza-type">Tipo de Pizza</label>
+                    <select id="pizza-type" name="pizza-type" required>
+                        <option value="">Selecione...</option>
+                        <option value="salgada">Salgada</option>
+                        <option value="doce">Doce</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="pizza-name">Nome da Pizza</label>
+                    <input type="text" id="pizza-name" name="pizza-name" required placeholder="Dê um nome criativo para sua pizza">
+                </div>
+                
+                <div class="form-group">
+                    <label for="pizza-desc">Descrição</label>
+                    <textarea id="pizza-desc" name="pizza-desc" required placeholder="Descreva sua pizza..."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label>Ingredientes Obrigatórios</label>
+                    <div class="ingredients-list">
+                        <div class="ingredient-item">
+                            <input type="checkbox" id="ing1" name="ingredients" value="queijo">
+                            <label for="ing1">Queijo</label>
+                        </div>
+                        <div class="ingredient-item">
+                            <input type="checkbox" id="ing2" name="ingredients" value="tomate">
+                            <label for="ing2">Molho de Tomate</label>
+                        </div>
+                        <div class="ingredient-item">
+                            <input type="checkbox" id="ing3" name="ingredients" value="calabresa">
+                            <label for="ing3">Calabresa</label>
+                        </div>
+                        <div class="ingredient-item">
+                            <input type="checkbox" id="ing4" name="ingredients" value="frango">
+                            <label for="ing4">Frango</label>
+                        </div>
+                        <div class="ingredient-item">
+                            <input type="checkbox" id="ing5" name="ingredients" value="catupiry">
+                            <label for="ing5">Catupiry</label>
+                        </div>
+                        <div class="ingredient-item">
+                            <input type="checkbox" id="ing6" name="ingredients" value="chocolate">
+                            <label for="ing6">Chocolate</label>
+                        </div>
+                        <div class="ingredient-item">
+                            <input type="checkbox" id="ing7" name="ingredients" value="morango">
+                            <label for="ing7">Morango</label>
+                        </div>
+                        <div class="ingredient-item">
+                            <input type="checkbox" id="ing8" name="ingredients" value="banana">
+                            <label for="ing8">Banana</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="pizza-price">Valor Sugerido (R$)</label>
+                    <input type="number" id="pizza-price" name="pizza-price" min="0" step="0.01" placeholder="Ex: 45.90">
+                </div>
+                
+                <button type="submit" class="submit-btn">Enviar Sugestão</button>
+            </form>
         </section>
     </main>
 
